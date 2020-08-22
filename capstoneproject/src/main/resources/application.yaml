@@ -1,0 +1,58 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:8080/capstone
+    username: capstone
+    password: enotspac_3z
+
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 973836910297-lmqvdeu9r7gujlfs4um9c9mm8t2i5iau.apps.googleusercontent.com
+            clientSecret: -VhLfRXa1A8k6VoFFulyWa7A
+            redirectUri: "http://localhost:3000/oauth2/callback/google"
+            scope:
+              - email
+              - profile
+          facebook:
+            client-id: 121189305185277
+            client-secret: 5e221ded55f9f896525acedb7bac9f5a6d648291security
+            redirectUri: "http://localhost:3000/oauth2/callback/facebook" # Note that facebook now mandates the use of https redirect URIs, so make sure your app supports https in production
+            scope:
+              - email
+              - public_profile
+          github:
+            client-id: Iv1.c6c215e516006b70
+            client-secret: 7bf8212d84745dc555754e6192bde0152913d615
+            redirectUri: "http://localhost:3000/oauth2/callback/github"
+            scope:
+              - user:email
+              - read:user
+        provider:
+          facebook:
+            authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
+            tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
+            userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,is_verified,picture.width(250).height(250)
+app:
+  auth:
+    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    tokenExpirationMsec: 864000000
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+      - myandroidapp://oauth2/redirect
+      - myiosapp://oauth2/redirect
+
+
