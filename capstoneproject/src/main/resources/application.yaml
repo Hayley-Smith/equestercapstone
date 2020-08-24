@@ -2,7 +2,7 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     #url: jdbc:mysql://localhost:8080/capstone
-    url: jdbc:mysql://127.0.0.1:55738/localdb
+    url: jdbc:mysql://127.0.0.1:50165/localdb
     #username: capstone
     #password: enotspac_3z
     username: azure
@@ -23,9 +23,9 @@ spring:
       client:
         registration:
           google:
-            clientId: 973836910297-lmqvdeu9r7gujlfs4um9c9mm8t2i5iau.apps.googleusercontent.com
-            clientSecret: -VhLfRXa1A8k6VoFFulyWa7A
-            redirectUri: "http://localhost:3000/oauth2/callback/google"
+            clientId: 336586209356-6ie5puqq70f5st2b6f7ed2f26nb1e30o.apps.googleusercontent.com
+            clientSecret: _PXgQIDQDA5kdQctItQ774fP
+            redirectUri: "http://127.0.0.1:55738/oauth2/callback/google"
             scope:
               - email
               - profile
@@ -37,8 +37,8 @@ spring:
               - email
               - public_profile
           github:
-            client-id: Iv1.c6c215e516006b70
-            client-secret: 7bf8212d84745dc555754e6192bde0152913d615
+            client-id: c91b2237889b34d8c5fd
+            client-secret: 5e221ded55f9f896525acedb7bac9f5a6d648291
             redirectUri: "http://localhost:3000/oauth2/callback/github"
             scope:
               - user:email
