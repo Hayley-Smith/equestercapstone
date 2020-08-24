@@ -3,8 +3,10 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     #url: jdbc:mysql://localhost:8080/capstone
     url: jdbc:mysql://127.0.0.1:55738/localdb
-    username: capstone
-    password: enotspac_3z
+    #username: capstone
+    #password: enotspac_3z
+    username: azure
+    password: 6#vWHD_$
 
 
 
