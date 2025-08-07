@@ -13,7 +13,7 @@
     "react-hook-form": "^6.3.3",
     "react-json-view": "latest",
     "react-s-alert": "^1.4.1",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "react-slideshow-image": "^3.0.2",
     "uniforms": "^3.0.0-rc.2",
     "uniforms-bridge-json-schema": "^3.0.0-rc.2",
